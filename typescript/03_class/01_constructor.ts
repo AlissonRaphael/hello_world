@@ -1,4 +1,4 @@
-class FristDate {
+class FirstDate {
   day: number
   mounth: string
   year: number
@@ -10,7 +10,7 @@ class FristDate {
   }
 }
 
-const firstDate = new FristDate(7, 'set', 2001)
+const firstDate = new FirstDate(7, 'set', 2001)
 console.log(firstDate)
 
 class LastDate {
@@ -23,4 +23,3 @@ class LastDate {
 
 const lastDate = new LastDate(20, 'out', 2019)
 console.log(lastDate)
- 
