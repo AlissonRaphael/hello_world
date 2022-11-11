@@ -1,0 +1,4 @@
+# Note:
+# .ex is for compiled code
+# .exs is for interpreted code
+# execute .exs with interactive elixir (iex) and filename in terminal: 'iex hello_world.exs'
