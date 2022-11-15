@@ -1,13 +1,13 @@
 fname = "Alisson"
 lname = "Oliveira"
 
-IO.puts("Welcome! Mr. #{fname} #{lname}.")
+# IO.puts("Welcome! Mr. #{fname} #{lname}.")
 
-country = IO.gets("Where you are from #{fname}? ")
+# country = IO.gets("Where you are from #{fname}? ")
 
-IO.puts(fname <> " " <> lname <> " from #{country}")
+# IO.puts(fname <> " " <> lname <> " from #{country}")
 
-String.length(country) # 6
+# String.length(country) # 6
 byte_size("É") # 2
 
 String.at("North East", 6) # E
@@ -28,3 +28,29 @@ String.codepoints("Hello!") # ["H", "e", "l", "l", "!"]
 String.contains?("I live in the northeast", "northeast") # true
 String.contains?("I live in the northeast", ["northeast", "north"]) # true
 String.contains?("I live in the northeast", ["south", "north"]) # false
+
+String.duplicate("alisson", 2) # alissonalisson
+String.duplicate("alisson", 0) # ""
+String.duplicate("one", 5) # oneoneoneoneone
+
+String.ends_with?("southeast", "east") # true
+String.ends_with?("southeast", ["west", "east"]) # true
+String.ends_with?("southeast", ["west", "south"]) # false
+
+String.equivalent?("abc", "abc") # true
+String.equivalent?("abc", "ABC") # false
+
+String.first("elixir") # e
+String.first("") # nil
+
+String.last("elixir") # r
+String.last("") # nil
+
+String.graphemes("\u00e9") # é
+
+String.length("elixir") # 6
+
+d = String.pad_leading("Alisson", 10) # "   Alisson"
+d = String.pad_leading("Alisson", 10) # "   Alisson"
+
+IO.puts(d)
