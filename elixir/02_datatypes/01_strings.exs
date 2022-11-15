@@ -1,13 +1,13 @@
 fname = "Alisson"
 lname = "Oliveira"
 
-# IO.puts("Welcome! Mr. #{fname} #{lname}.")
+IO.puts("Welcome! Mr. #{fname} #{lname}.")
 
-# country = IO.gets("Where you are from #{fname}? ")
+country = IO.gets("Where you are from #{fname}? ")
 
-# IO.puts(fname <> " " <> lname <> " from #{country}")
+IO.puts(fname <> " " <> lname <> " from #{country}")
 
-# String.length(country) # 6
+String.length(country) # 6
 byte_size("É") # 2
 
 String.at("North East", 6) # E
@@ -50,7 +50,11 @@ String.graphemes("\u00e9") # é
 
 String.length("elixir") # 6
 
-d = String.pad_leading("Alisson", 10) # "   Alisson"
-d = String.pad_leading("Alisson", 10) # "   Alisson"
+String.pad_leading("Alisson", 10) # "   Alisson"
+String.pad_leading("Alisson", 10, "_") # "___Alisson"
 
-IO.puts(d)
+String.pad_trailing("Alisson", 10) # "Alisson   "
+String.pad_trailing("Alisson", 10, "-") # "Alisson---"
+
+String.replace("a,b,c,d", ",", "-") # "a-b-c-d"
+String.replace("a,b,c,d", ",", "-", global: false) # "a-b,c,d"
