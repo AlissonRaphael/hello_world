@@ -50,6 +50,9 @@ String.graphemes("\u00e9") # é
 
 String.length("elixir") # 6
 
+String.match?("Alisson", ~r/Alisson/) # true
+String.match?("Oliveira", ~r/Raphael/) # false
+
 String.pad_leading("Alisson", 10) # "   Alisson"
 String.pad_leading("Alisson", 10, "_") # "___Alisson"
 
@@ -58,3 +61,7 @@ String.pad_trailing("Alisson", 10, "-") # "Alisson---"
 
 String.replace("a,b,c,d", ",", "-") # "a-b-c-d"
 String.replace("a,b,c,d", ",", "-", global: false) # "a-b,c,d"
+
+String.reverse("Alisson") # "nossilA"
+
+System.stop()
