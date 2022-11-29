@@ -64,4 +64,12 @@ String.replace("a,b,c,d", ",", "-", global: false) # "a-b,c,d"
 
 String.reverse("Alisson") # "nossilA"
 
+String.slice("Alisson", 1..5) # lisso
+String.slice("Alisson", 5..6) # on
+String.slice("Alisson", 2..-2) # isso
+String.slice("Alisson", -6..6) # lisson
+String.slice("Alisson", 8..12) # ""
+String.slice("Alisson", 6..1) # ""
+String.slice("Alisson", -2..-5) # ""
+
 System.stop()
