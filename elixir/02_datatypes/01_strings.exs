@@ -1,14 +1,14 @@
-# fname = "Alisson"
-# lname = "Oliveira"
+fname = "Alisson"
+lname = "Oliveira"
 
-# IO.puts("Welcome! Mr. #{fname} #{lname}.")
+IO.puts("Welcome! Mr. #{fname} #{lname}.")
 
-# country = IO.gets("Where you are from #{fname}? ")
+country = IO.gets("Where you are from #{fname}? ")
 
-# IO.puts(fname <> " " <> lname <> " from #{country}")
+IO.puts(fname <> " " <> lname <> " from #{country}")
 
-# String.length(country) # 6
-# byte_size("É") # 2
+String.length(country) # 6
+byte_size("É") # 2
 
 String.at("North East", 6) # E
 String.at("North East", 0) # N
