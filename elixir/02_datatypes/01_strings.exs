@@ -1,14 +1,14 @@
-fname = "Alisson"
-lname = "Oliveira"
+# fname = "Alisson"
+# lname = "Oliveira"
 
-IO.puts("Welcome! Mr. #{fname} #{lname}.")
+# IO.puts("Welcome! Mr. #{fname} #{lname}.")
 
-country = IO.gets("Where you are from #{fname}? ")
+# country = IO.gets("Where you are from #{fname}? ")
 
-IO.puts(fname <> " " <> lname <> " from #{country}")
+# IO.puts(fname <> " " <> lname <> " from #{country}")
 
-String.length(country) # 6
-byte_size("É") # 2
+# String.length(country) # 6
+# byte_size("É") # 2
 
 String.at("North East", 6) # E
 String.at("North East", 0) # N
@@ -57,7 +57,7 @@ String.pad_leading("Alisson", 10) # "   Alisson"
 String.pad_leading("Alisson", 10, "_") # "___Alisson"
 
 String.pad_trailing("Alisson", 10) # "Alisson   "
-String.pad_trailing("Alisson", 10, "-") # "Alisson---"
+String.pad_trailing("Alisson", 14, "-") # "Alisson-------"
 
 String.replace("a,b,c,d", ",", "-") # "a-b-c-d"
 String.replace("a,b,c,d", ",", "-", global: false) # "a-b,c,d"
@@ -71,5 +71,34 @@ String.slice("Alisson", -6..6) # lisson
 String.slice("Alisson", 8..12) # ""
 String.slice("Alisson", 6..1) # ""
 String.slice("Alisson", -2..-5) # ""
+String.slice("I live in the northeast", 7, 6) # "in the"
+String.slice("I live in the northeast", -9, 100) # "northeast"
+String.slice("I live in the northeast", 200, 1000) # ""
+String.slice("I live in the northeast", 2, 4) # "live"
+
+String.split("Alisson,Raphael,Oliveira", ",") # ["Alisson", "Raphael", "Oliveira"]
+String.split("Alisson,Raphael,Oliveira", ",", parts: 2) # ["Alisson", "Raphael,Oliveira"]
+String.split("blue,red black,pink, silver,white", " ") # ["blue,red", "black,pink,", "silver,white"]
+String.split("blue,red black,pink, silver,white", [" ", ","]) # ["blue", "red", "black", "pink", "silver", "white"]
+
+String.starts_with?("southeast", "south") # true
+String.starts_with?("southeast", ["north", "south"]) # true
+String.starts_with?("southeast", ["north", "east"]) # false
+
+String.to_atom("ElixirLang") # :ElixirLang
+:ElixirLang
+
+String.to_float("2.2063e+3") # 2206.3
+String.to_float("3.0") # 3.0
+# String.to_float("3") # (ArgumentError) argument error
+
+String.to_integer("40") # 40
+# String.to_integer("number") # (ArgumentError) argument error
+
+String.trim(" My name is Alisson    ") # "My name is Alisson"
+String.trim_leading("-- My name is Alisson ---") # " My name is Alisson ---"
+String.trim_trailing("-- My name is Alisson ---") # "-- My name is Alisson "
+
+String.upcase("not north") # "NOT NORTH"
 
 System.stop()
