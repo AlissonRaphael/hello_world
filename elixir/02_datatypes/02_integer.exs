@@ -1,13 +1,13 @@
-Integer.extended_gcd(240, 46)
+Integer.digits(1003) # [1, 0, 0, 3]
 
-Integer.floor_div(5, 2)
+Integer.extended_gcd(240, 46) # {2, -9, 47}
 
-Integer.gcd(8, 12)
+Integer.floor_div(5, 2) # 2
 
-Integer.mod(13,4)
+Integer.gcd(8, 12) # 4
 
-Integer.parse("34.2")
+Integer.mod(13,4) # 1
 
-IO.puts(a)
+Integer.parse("34.2") # {34, ".2"}
 
 System.stop()
