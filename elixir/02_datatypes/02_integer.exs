@@ -10,4 +10,12 @@ Integer.mod(13,4) # 1
 
 Integer.parse("34.2") # {34, ".2"}
 
+Integer.pow(2, 10) # 1024
+
+Integer.to_charlist(-720)
+
+Integer.to_string(20) # "20"
+
+Integer.undigits([1,7,3]) # 173
+
 System.stop()
