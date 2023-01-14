@@ -58,4 +58,31 @@ Date.leap_year?(~D[2001-01-01]) # false
 
 Date.months_in_year(~D[1989-11-09]) # 12
 
+Date.new(1989, 11, 09) # {:ok, ~D[1989-11-09]}
+Date.new(2014, 13, 01) # {:error, :invalid_date}
+Date.new(1989, 11, 09) # {:ok, ~D[1989-11-09]}
+Date.new(2002, 06, 30) # {:ok, ~D[2002-06-30]}
+
+Date.quarter_of_year(~D[1989-11-09]) # 4
+Date.quarter_of_year(~D[2002-06-30]) # 2
+Date.quarter_of_year(~D[2023-01-30]) # 1
+Date.quarter_of_year(~D[-0015-09-30]) # 3
+
+Date.to_erl(~D[1989-11-09]) # {1989, 11, 9}
+# Date.to_erl(~D[1989-13-09]) ** (ArgumentError) cannot parse "1989-13-09" as Date for Calendar.ISO, reason: :invalid_date
+
+Date.to_gregorian_days(~D[0000-01-10]) # 9
+Date.to_gregorian_days(~D[-0001-12-25]) # -7
+
+Date.to_iso8601(~D[1989-11-09]) # "1989-11-09"
+Date.to_iso8601(~D[2000-02-28]) # "2000-02-28"
+
+Date.to_string(~D[2000-02-28]) # "2000-02-28"
+Date.to_string(~N[2000-02-28 01:23:45]) # "2000-02-28"
+
+Date.year_of_era(~D[1989-11-09]) # {1989, 1}
+a = Date.year_of_era(~D[-0200-01-01]) # {1989, 1}
+
+IO.inspect(a)
+
 System.stop()
