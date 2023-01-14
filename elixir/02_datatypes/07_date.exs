@@ -39,6 +39,23 @@ Date.diff(~D[2023-01-03], ~D[2023-01-01]) # 2
 Date.diff(~D[2023-03-03], ~D[2023-04-03]) # -31
 Date.diff(~D[2023-02-01], ~D[2022-12-01]) # 62
 
-IO.inspect(a)
+Date.from_erl({ 2023, 06, 10 }) # {:ok, ~D[2023-06-10]}
+Date.from_erl({ 2023, 13, 10 }) # {:error, :invalid_date}
+
+Date.from_erl!({ 2023, 06, 10 }) # ~D[2023-06-10]
+# Date.from_erl!({ 2023, 13, 10 }) ** (ArgumentError) cannot convert {2000, 13, 1} to date, reason: :invalid_date
+
+Date.from_gregorian_days(1) # ~D[0000-01-02]
+Date.from_gregorian_days(-1) # ~D[-0001-12-31]
+Date.from_gregorian_days(365) # ~D[-0000-12-31]
+
+Date.from_iso8601("2023-10-31") # {:ok, ~D[2023-10-31]}
+Date.from_iso8601("1989-11-09") # {:ok, ~D[1989-11-09]}
+Date.from_iso8601("2010-13-01") # {:error, :invalid_date}
+
+Date.leap_year?(~D[2000-01-01]) # true
+Date.leap_year?(~D[2001-01-01]) # false
+
+Date.months_in_year(~D[1989-11-09]) # 12
 
 System.stop()
