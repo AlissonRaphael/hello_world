@@ -81,8 +81,13 @@ Date.to_string(~D[2000-02-28]) # "2000-02-28"
 Date.to_string(~N[2000-02-28 01:23:45]) # "2000-02-28"
 
 Date.year_of_era(~D[1989-11-09]) # {1989, 1}
-a = Date.year_of_era(~D[-0200-01-01]) # {1989, 1}
+Date.year_of_era(~D[-0200-01-01]) # {201, 0}
 
-IO.inspect(a)
+date4 = Date.utc_today() # ~D[2023-01-16]
+
+date4.year # 2023
+date4.month # 01
+date4.day # 16
+date4.calendar # Calendar.ISO
 
 System.stop()
