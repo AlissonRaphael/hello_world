@@ -5,8 +5,8 @@ This repository contains the files/annotations of syntax studies and problem sol
 
 
 ## Languages
-[![Typescript Badge](https://img.shields.io/badge/-Typescript-000?style=for-the-badge&logo=Typescript&logoColor=white&color=3178C6&link=https://www.typescriptlang.org/)](https://www.typescriptlang.org/)
-
+![GithubPages Badge](https://img.shields.io/badge/-TypeScript-000?style=flat-square&logo=typescript&logoColor=white&color=3178C6)
+![GithubPages Badge](https://img.shields.io/badge/-Elixir-000?style=flat-square&logo=elixir&logoColor=white&color=4B275F)
 
 ## Contents
 - [Installation](#installation)
