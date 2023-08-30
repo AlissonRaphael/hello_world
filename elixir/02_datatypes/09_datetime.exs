@@ -26,4 +26,16 @@ datetimeIII = %DateTime{year: 1998, month: 6, day: 15, zone_abbr: "AMT",
 DateTime.compare(datetimeI, datetimeII) # :gt
 DateTime.compare(datetimeIII, datetimeI) # :lt
 
+DateTime.diff(datetimeI, datetimeII) # 18000 -> seconds
+DateTime.diff(datetimeI, datetimeIII) # 53967607 -> seconds
+DateTime.diff(datetimeI, datetimeIII, :hour) # 14991 -> hours
+DateTime.diff(datetimeI, datetimeIII, :day) # 624 -> days
+
+DateTime.from_gregorian_seconds(1) # ~U[0000-01-01 00:00:01Z]
+
+DateTime.from_iso8601("2015-01-23T23:50:07Z") # {:ok, ~U[2015-01-23 23:50:07Z], 0}
+DateTime.from_iso8601("2015-01-23P23:50:07") # {:error, :invalid_format}
+
+IO.inspect(datetime)
+
 System.stop()
