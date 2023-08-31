@@ -36,6 +36,15 @@ DateTime.from_gregorian_seconds(1) # ~U[0000-01-01 00:00:01Z]
 DateTime.from_iso8601("2015-01-23T23:50:07Z") # {:ok, ~U[2015-01-23 23:50:07Z], 0}
 DateTime.from_iso8601("2015-01-23P23:50:07") # {:error, :invalid_format}
 
+DateTime.from_unix(1_464_096_368) # {:ok, datetime}
+DateTime.from_unix(253_402_300_800) # {:error, :invalid_unix_time}
+
+DateTime.from_unix!(0) # ~U[1970-01-01 00:00:00Z]
+DateTime.from_unix!(1_432_560_368_868_569, :microsecond) # ~U[2015-05-25 13:26:08.868569Z]
+
+DateTime.now("Etc/UTC") # {:ok, ~U[2023-08-31 02:41:08.904461Z]}
+DateTime.now("bad timezone") # {:error, :time_zone_not_found}
+
 IO.inspect(datetime)
 
 System.stop()
