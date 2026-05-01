@@ -3,21 +3,23 @@
 
 using namespace std;
 
-struct User {
+struct User
+{
   int id;
   string email;
   bool active;
 };
 
-int main() {
+int main()
+{
   User user;
 
   user.id = 1;
 
-  cout<<"Enter the email: ";
-  cin>>user.email;
+  cout << "Enter the email: ";
+  cin >> user.email;
 
-  cout<<"User "<<user.email<<" has the id "<<user.id;
+  cout << "User " << user.email << " has the id " << user.id;
 
   return 0;
 }

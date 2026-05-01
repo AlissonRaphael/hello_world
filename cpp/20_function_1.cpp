@@ -3,21 +3,25 @@
 
 using namespace std;
 
-void hello_world() {
-  cout<<"Hello World!";
+void hello_world()
+{
+  cout << "Hello World!";
 }
 
-void welcome() {
-  cout<<"Welcome to C++";
+void welcome()
+{
+  cout << "Welcome to C++";
 }
 
-void print() {
+void print()
+{
   hello_world();
-  cout<<endl;
+  cout << endl;
   welcome();
 }
 
-int main() {
+int main()
+{
   print();
   return 0;
 }

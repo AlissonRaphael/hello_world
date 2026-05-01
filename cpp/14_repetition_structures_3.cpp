@@ -2,23 +2,25 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
   float sum;
   char close;
 
-  do {
+  do
+  {
     float number;
 
-    cout<<"Number to sum: ";
-    cin>>number;
+    cout << "Number to sum: ";
+    cin >> number;
 
-    sum+=number;
+    sum += number;
 
-    cout<<"Exit (y/n)? ";
-    cin>>close;
-  } while(close == 'n');
+    cout << "Exit (y/n)? ";
+    cin >> close;
+  } while (close == 'n');
 
-  cout<<"Result: "<<sum;
+  cout << "Result: " << sum;
 
   return 0;
 }
