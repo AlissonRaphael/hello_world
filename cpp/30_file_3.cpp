@@ -11,7 +11,8 @@ using namespace std;
   "jon","m"
 */
 
-int main() {
+int main()
+{
   bool reading = 1;
   ifstream file;
   string line;
@@ -30,10 +31,11 @@ int main() {
     if (reading)
     {
       cout << line << endl;
-    }
+    };
   }
   while (reading);
 
+  file.close();
 
   return 0;
 }

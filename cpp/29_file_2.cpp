@@ -23,14 +23,15 @@ User create_user()
   return user;
 };
 
-int main() {
+int main()
+{
   char should_register = 'y';
   ofstream my_file("users.csv");
 
   if (!my_file.good())
   {
     return 0;
-  }
+  };
 
   my_file << "name,gender" << endl;
 
@@ -41,7 +42,9 @@ int main() {
 
     cout << "Continue Registering (y/n)? ";
     cin >> should_register;
-  }
+  };
+
+  my_file.close();
 
   return 0;
 }

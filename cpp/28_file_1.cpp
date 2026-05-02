@@ -3,7 +3,8 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
   ofstream my_file;
 
   my_file.open("test.txt");
@@ -15,7 +16,7 @@ int main() {
   else
   {
     cout << "Error reading file.";
-  }
+  };
 
   my_file << "Hello World!";
 
