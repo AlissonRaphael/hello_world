@@ -1,0 +1,5 @@
+# how to run:
+g++ file_name -0 output_file_name & ./output_file_name
+
+# example:
+g++ 01_hello_world -o hello_world && ./hello_world
