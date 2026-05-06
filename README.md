@@ -1,12 +1,12 @@
 # Hello World
 [![GitHub](https://img.shields.io/github/license/AlissonRaphael/api_rent_a_car)](https://github.com/AlissonRaphael/hello_world/blob/main/LICENSE)
 
-This repository contains the files/annotations of syntax studies and problem solving with different programming languages. of car specifications and registration, login, password recovery for users, in addition to the creation of car rentals by users.
-
+This repository contains the files/annotations of syntax studies and problem solving with different programming languages.
 
 ## Languages
 ![GithubPages Badge](https://img.shields.io/badge/-TypeScript-000?style=flat-square&logo=typescript&logoColor=white&color=3178C6)
 ![GithubPages Badge](https://img.shields.io/badge/-Elixir-000?style=flat-square&logo=elixir&logoColor=white&color=4B275F)
+![GithubPages Badge](https://img.shields.io/badge/-C++-000?style=flat-square&logo=c%2B%2B&logoColor=white&color=00599C)
 
 ## Contents
 - [Installation](#installation)
@@ -22,10 +22,7 @@ Clone this repo to your local machine using `https://github.com/AlissonRaphael/h
 
 
 ## Contact
-[![GithubPages Badge](https://img.shields.io/badge/-Portfólio-000?style=flat-square&logo=github&logoColor=white&color=black&link=https://alissonraphael.github.io/)](https://alissonraphael.github.io/)
-[![Medium Badge](https://img.shields.io/badge/-Medium-000?style=flat-square&logo=Medium&logoColor=white&color=black&link=https://medium.com/@alissonraphaeloliveira)](https://medium.com/@alissonraphaeloliveira)
 [![Gmail Badge](https://img.shields.io/badge/-alissonraphaeloliveira@gmail.com-000?style=flat-square&logo=Gmail&logoColor=white&color=black&link=mailto:alissonraphaelolivera@gmail.com)](mailto:alissonraphaelolivera@gmail.com)
-[![Linkedin Badge](https://img.shields.io/badge/-Linkedin-000?style=flat-square&logo=linkedin&logoColor=white&color=black&link=www.linkedin.com/in/alisson-raphael-oliveira)](https://www.linkedin.com/in/alisson-raphael-oliveira/)
 
 
 ## License
