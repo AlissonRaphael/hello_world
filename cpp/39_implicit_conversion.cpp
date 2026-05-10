@@ -12,7 +12,7 @@ int main()
   char key = 'w'; 
   int key_code = key;
 
-  cout << key_code << endl; // 57
+  cout << key_code << endl; // 119
 
   int number = 10;
   float float_number = number;
